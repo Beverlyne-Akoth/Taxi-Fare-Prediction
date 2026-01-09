@@ -7,7 +7,7 @@ The TLC data comes from over 200,000 taxi and limousine licensees, making approx
 The tasks involved in the project are;
 * Model building
 * Model evaluation
-* Summarize findings for Automatidata and the stakeholders at TLC
+* Summarize findings for stakeholders at TLC
 
 </br> While analyzing the ethical considerations of the model, it was discovered that Drivers who didn't receive tips will probably be upset that the app told them a customer would leave a tip. If it happened often, drivers might not trust the app. Drivers are unlikely to pick up people who are predicted to not leave tips. Customers will have difficulty finding a taxi that will pick them up, and might get angry at the taxi company. Even when the model is correct, people who can't afford to tip will find it more difficult to get taxis, which limits the accessibility of taxi service to those who pay extra.
 </br> Since it's not good to disincentivize drivers from picking up customers. It could also cause a customer backlash. The problems seem to outweigh the benefits.
@@ -44,5 +44,5 @@ model    	  precision 	recall	    F1	  accuracy
 0	XGB test	0.679062	0.738643	0.707601	0.678677
 0	XGB CV	  0.673282	0.727442	0.699274	0.670652
 
-</br>As it can be seen, the RF model performs better and is therefore the champion model.
+</br>The RF model performs better and is therefore the champion model.
  </br>After computing feature importance, the strongest features to the model are VendorID, predicted_fare, mean_duration, and mean_distance. It is interesting that VendorID is the most predictive feature. This seems to indicate that one of the two vendors tends to attract more generous customers. It may be worth performing statistical tests on the different vendors to examine this further.
